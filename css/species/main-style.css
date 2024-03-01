@@ -1,0 +1,258 @@
+::-webkit-scrollbar {
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-track {
+    background: #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #818181;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    height: max-content;
+    width: 100% !important;
+}
+
+
+.main-st {
+    height: max-content;
+    position: relative;
+    height: max-content;
+    left: 200px;
+}
+
+.section1-st {
+    height: 70vh;
+    color: rgb(63, 63, 63);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 4vh;
+    background-color: #cccccc;
+}
+
+.sec1-name-species {
+    text-shadow: 2px 2px #7f7f7f;
+    font-size: 4vh;
+    margin-top: 2vh;
+    text-decoration: underline;
+}
+
+.sec1-miniNav {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec1-miniNav p {
+    display: flex;
+    margin: 0 4% 0 4%;
+    text-decoration: underline;
+    font-size: 2vh;
+}
+
+.sec1-miniNav p:hover {
+    cursor: pointer;
+    color: #8b8b8b;
+}
+
+/* slider treba popraviti*/
+.sec1-part2 {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1% 0 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-slider1,
+.con-slider3 {
+    height: 60%;
+    width: 24%;
+    border: 4px solid #000000;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.con-slider1 {
+    left: 4%;
+}
+
+.con-slider3 {
+    right: 4%;
+}
+
+
+.con-slider2 {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    border: 4px solid #000000;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100% 100% 100% 100% 100% 100% 100%;
+    grid-template-rows: 100%;
+    z-index: 100;
+    gap: 0;
+}
+
+
+.sec1-right-button,
+.sec1-left-button {
+    z-index: 1000;
+    font-size: 29px;
+    padding: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+}
+
+.sec1-right-button {
+    right: 23.8%;
+}
+
+.sec1-left-button {
+    left: 23.8%;
+}
+
+.sec1-right-button:hover,
+.sec1-left-button:hover {
+    background-color: #9a9a9a;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.6s, background-size 0.9s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+
+}
+
+.slide:hover {
+    background-size: 106%;
+    transition: background-size 0.6s;
+}
+
+
+
+/* about cotainer */
+.section2-st {
+    background-color: rgb(136, 136, 136);
+    color: rgb(230, 230, 230);
+    padding: 2.5vh;
+    border-top: 4px solid #4c4c4c;
+    border-bottom: 4px solid #4c4c4c;
+}
+
+.section2-st>div {
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 1.7vh;
+}
+
+.section2-st>div>h2 {
+    text-decoration: underline;
+    margin-bottom: 1.7vh;
+    font-size: 2.8vh;
+}
+
+.section2-st>div>p {
+    font-size: 1.9vh;
+}
+
+/* ID continer */
+.section3-st {
+    height: max-content;
+    min-height: 140vh;
+    background-color: #cccccc;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    padding: 2vh;
+    padding-bottom: 5vh;
+}
+
+.section3-st>h2 {
+    font-size: 3.4vh;
+    text-decoration: underline;
+    margin-bottom: 1.8%;
+}
+
+.sec3-table-con1,
+.sec3-table-con2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3-table-con1 {
+    height: 139vh;
+}
+
+.sec3-table-con2 {
+    height: 143vh;
+}
+
+.sec3-info-grid1,
+.sec3-info-grid2 {
+    border: 4px solid #4c4c4c;
+    height: 100%;
+    width: 67%;
+    display: grid;
+
+    background-color: #7f7f7f;
+    color: rgb(230, 230, 230);
+}
+
+.sec3-info-grid1 {
+    grid-template-columns: 25% 75%;
+}
+
+.sec3-info-grid2 {
+    grid-template-columns: 25% 75%;
+}
+
+.gr-img,
+.gr-info {
+    border: 1.4px solid #4c4c4c;
+    color: rgb(230, 230, 230);
+    text-shadow: 1.3px 1.3px #000000;
+}
+
+.gr-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.gr-info {
+    padding: 1%;
+    text-align: left;
+}

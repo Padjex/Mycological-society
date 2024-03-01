@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-track {
+    background: #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #818181;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-color: #262726;
+    height: 100vh !important;
+}
+
+main {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: calc(100%-110px);
+}
+
+main>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.user-Img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(71, 71, 71);
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 250px;
+    max-height: 250px;
+    border: 2px solid #000000;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.btn-set-Img {
+    color: rgb(217, 217, 217);
+    font-size: 17px !important;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-set-Img:hover {
+    color: #262726;
+    cursor: pointer;
+}
+
+.user-info-con {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 3vh;
+    font-weight: 600;
+    color: #262726;
+}
+
+.user-info-con>p {
+    margin: 10px;
+}
+
+.p-info {
+    font-weight: 900;
+    margin-top: 0px !important;
+}
+
+.info-admin {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #262726;
+}
+
+.btn-change {
+    background-color: rgb(180, 180, 180);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 7px;
+    margin-top: 10px;
+    border: 2px solid #262726;
+}
+
+.btn-change:hover {
+    background-color: #4e4d4d;
+    cursor: pointer;
+}
+
+.myFavorites-con>h2,
+.myFounds-con>h2 {
+    margin-top: 34px;
+    margin-bottom: 24px;
+    font-size: 34px;
+    color: #262726;
+}
+
+.myFavorites-con>ul,
+.myFounds-con>ul {
+    color: #262726;
+    font-size: 20px;
+    font-weight: 700;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* list favorite */
+.list-con {
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+}
+
+/* li to fill from api */
+
+
+
+.favorite-li {
+    background-color: #515151;
+    min-height: 24vh;
+    max-height: 300px;
+    width: 94%;
+    display: flex;
+    border-radius: 40px;
+    border: 4px solid #3e3e3e;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.img-favorite {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 40%;
+    border-radius: 40px;
+    border: 2px solid #bdbdbd;
+}
+
+.mus-name-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    color: #d0d0d0;
+    text-shadow: -2px 0 rgb(39, 39, 39), 0 2px rgb(39, 39, 39), 2px 0 rgb(39, 39, 39), 0 -2px rgb(39, 39, 39);
+}
+
+.fm-name {
+    font-size: 3vh;
+    font-weight: 900;
+    margin-bottom: 4%;
+}
+
+.sp-name {
+    font-size: 2.8vh;
+    font-weight: 900;
+    margin-bottom: 4%;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 14px;
+    top: 6px;
+    color: #bdbdbd;
+}
+
+.btn-delete:hover {
+    color: #262726;
+    cursor: pointer;
+}
+
+/* tooltip color */
+.tooltip {
+    color: #262726;
+    font-weight: 700;
+}
+
+
+/* for amdin */
+.member-of-site-div {
+    margin-top: 10px;
+    border-top: 4px solid #262726;
+    height: 100%;
+    width: 80%;
+    color: #262726;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+table {
+    margin-top: 14px;
+    width: 100%;
+    border: 3px solid #262726;
+    font-size: 22px;
+    background-color: #a08989;
+}
+
+td {
+    border: 2px solid #262726;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0;
+}
+
+.td-action {
+    display: flex;
+    overflow: hidden;
+}
+
+.id-column {
+    width: 14%;
+}
+
+.name-column {
+    width: 60%;
+}
+
+.action-column {
+    width: 26%;
+}
+
+.btn-addMem {
+    background-color: #6ada5f;
+    width: 70%;
+    font-weight: 600;
+
+}
+
+.btn-delMem {
+    width: 30%;
+    background-color: #7b3020;
+    border-left: 2px solid #303030 !important;
+    font-size: 20px;
+}
+
+.btn-delMem:hover {
+    background-color: #4f1c11;
+    cursor: pointer;
+}
+
+.btn-addMem:hover {
+    background-color: #3a8a17;
+    cursor: pointer;
+}
+
+.action-btn {
+    min-height: 27px;
+    height: 100%;
+    font-weight: 600;
+    border: 0;
+}

@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #262726;
+
+}
+
+::-webkit-scrollbar {
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-track {
+    background: #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(69, 69, 69);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(33, 33, 33);
+}
+
+/*SECTION 1 */
+
+.section1-st {
+    position: relative;
+    height: 95vh;
+    background-image: url('../../img/glavne/main-picture.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -250px;
+    background-size: 100%;
+    transition: background-size 7s ease;
+}
+
+
+.section1-st:hover {
+    background-size: 104%;
+    transition: background-size 9s ease;
+}
+
+
+.section1-title {
+    position: absolute;
+    color: rgb(184, 184, 184);
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 10vh;
+    font-size: 2.5vw;
+    text-align: center;
+    text-shadow: 4px 2px #505d56;
+}
+
+.section1-btn {
+    font-size: 1.4vw;
+    background-color: transparent;
+    border: none;
+    color: rgb(204, 204, 204);
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+.section1-btn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.section1-disc-left {
+    left: 1vw;
+}
+
+.section1-text1 {
+    text-shadow: 1px 2px #505d56;
+}
+
+.section1-text2 {
+    opacity: 0;
+    text-shadow: 1px 2px #505d56;
+}
+
+
+.section1-disc-right {
+    right: 1vw;
+}
+
+.section1-disc-left,
+.section1-disc-right {
+    color: rgb(184, 184, 184);
+    width: 31vw;
+    font-size: 0.9vw;
+    position: absolute;
+    top: 24vh;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 3.4vh;
+}
+
+/* SECTION 2 */
+
+.section2-st {
+    background-color: #535353;
+    width: 100%;
+    height: 54vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+    padding-bottom: 7vh;
+}
+
+
+.sec2-row1-st {
+    color: rgb(204, 204, 204);
+    font-size: 1.4vw;
+    text-shadow: 2px 2px #505d56;
+    transform: translateX(-100%) rotate(-45deg);
+    transition: transform 0.8s ease;
+}
+
+.sec2-row1-st.show {
+    transform: translateX(0%) rotate(0deg);
+}
+
+.sec2-row2-st {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+.sec2-row2-st>div {
+    width: 30%;
+    color: rgb(201, 203, 201);
+    text-shadow: 1px 1px #262726;
+    text-align: center;
+}
+
+/* SECTION 2 for animation */
+
+.sec2-part1 {
+    transform: translateX(-140%) rotate(-45deg);
+    transition: transform 1.4s ease;
+}
+
+.sec2-part1.show {
+    transform: translateX(0%) rotate(0deg);
+}
+
+.sec2-part2 {
+    transform: translateX(340%) rotate(+45deg);
+    transition: transform 0.8s ease;
+}
+
+.sec2-part2.show {
+    transform: translateX(0%) rotate(0deg);
+}
+
+.sec2-part3 {
+    transform: translateX(340%) rotate(-45deg);
+    transition: transform 1.8s ease;
+}
+
+.sec2-part3.show {
+    transform: translateX(0%) rotate(0deg);
+}
+
+/* SECTION 2 SLIDER*/
+.slider-container {
+    height: 75%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container>div {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid #a1a1a1;
+}
+
+
+.sec2-descripton {
+    height: 25%;
+    width: 100%;
+}
+
+.sec2-descripton h4 {
+    font-size: 1.1vw;
+}
+
+.sec2-right-button,
+.sec2-left-button {
+    z-index: 100;
+    font-size: 15px;
+    padding: 7px;
+    opacity: 0.6;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.sec2-right-button:hover,
+.sec2-left-button:hover {
+    opacity: 1;
+}
+
+.sec2-right-button {
+    right: -14px;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.sec2-left-button {
+    left: -14px;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.slider-container>div {
+    background-size: 100%;
+    transition: background-size 0.9s;
+}
+
+.slider-container:hover>div {
+    background-size: 104%;
+    transition: background-size 0.6s;
+}
+
+
+
+.sec1-sl1 {
+    background-image: url('../../img/proloce/man13.jpg');
+}
+
+.sec1-sl2 {
+    background-image: url('../../img/proloce/man12.jpg');
+}
+
+.sec1-sl3 {
+    background-image: url('../../img/proloce/man11.jpg');
+    background-position-y: 1px !important;
+}
+
+.sec1-sl4 {
+    background-image: url('../../img/proloce/man14.jpg');
+}
+
+.sec2-sl1 {
+    background-image: url('../../img/dani\ gljiva/man22.jpg');
+}
+
+.sec2-sl2 {
+    background-image: url('../../img/dani\ gljiva/man21.jpg');
+}
+
+.sec2-sl3 {
+    background-image: url('../../img/dani\ gljiva/man23.jpg');
+}
+
+.sec2-sl4 {
+    background-image: url('../../img/dani\ gljiva/man24.jpg');
+}
+
+.sec3-sl1 {
+    background-image: url('../../img/jesen/man31.jpg');
+}
+
+.sec3-sl2 {
+    background-image: url('../../img/jesen/man32.jpg');
+}
+
+.sec3-sl3 {
+    background-image: url('../../img/jesen/man33.jpg');
+}
+
+.sec3-sl4 {
+    background-image: url('../../img/jesen/man34.jpg');
+}
+
+/* SECTION 3 */
+
+.section3-st {
+    height: 50vh;
+    background-color: rgb(151, 151, 151);
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec3-part1 {
+    padding: 5.4vh;
+    padding-right: 7vw;
+    height: 100%;
+    width: 65%;
+}
+
+.sec3-p1-h4 {
+    font-size: 4vh;
+    text-shadow: 2px 2px #848484;
+    font-weight: bold;
+}
+
+.sec3-p1-p {
+    font-size: 3vh;
+    line-height: 5vh;
+    margin-top: 2.4vh;
+    font-weight: bold;
+    text-shadow: 1px 1px #505d56;
+}
+
+.sec3-part2 {
+    height: 100%;
+    width: 35%;
+}
+
+.sec3-p2-midd {
+    line-height: 3vh;
+    font-size: 2vh;
+    width: max-content;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3-p2-btn {
+    margin-top: 14%;
+    width: 70%;
+    height: 7.4vh;
+    border: none;
+    border-radius: 14px;
+    color: rgb(165, 165, 165);
+    font-size: 2.8vh;
+    font-weight: bold;
+}
+
+.sec3-p2-btn:hover {
+    background-color: #535353;
+    font-size: 3vh;
+    transition: font-size 0.2s ease-in;
+    background-color: #535353;
+}
+
+/* SECTION 3 for animation */
+.sec3-part1 {
+    transform: translateX(-100%) rotate(-45deg);
+    transition: transform 1s;
+}
+
+.sec3-part1.show {
+    transform: translateX(0%);
+}
+
+.sec3-p2-btn {
+    transform: translateX(220%);
+    transition: transform 0.6s ease;
+}
+
+.section3-st:hover .sec3-p2-btn {
+    transform: translateX(0%);
+}
+
+/* animation on reload */
+/* need to repair */
+
+/* .animation-divs {
+    position: absolute;
+
+    height: 50%;
+    width: 50%;
+    z-index: 100000000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    object-fit: contain;
+    transition: transform 3s ease-in;
+
+}
+
+.animation-div11 {
+    background-image: url('../../img/animationStart/row-1-column-1.png');
+    object-fit: contain;
+}
+
+.animation-div12 {
+    right: 0%;
+    background-image: url('../../img/animationStart/row-1-column-2.png');
+}
+
+.animation-div21 {
+    bottom: 0;
+    background-image: url('../../img/animationStart/row-2-column-1.png');
+}
+
+.animation-div22 {
+    bottom: 0;
+    right: 0;
+    background-image: url('../../img/animationStart/row-2-column-2.png');
+}
+
+.animation-div11.rotate {
+    transform: translateX(-200%) rotate(-90deg);
+    transform-origin: top left;
+}
+
+.animation-div12.rotate {
+    transform: translateX(200%) rotate(90deg);
+    transform-origin: top right;
+}
+
+.animation-div21.rotate {
+    transform: translateX(-200%) rotate(90deg);
+    transform-origin: bottom left;
+}
+
+.animation-div22.rotate {
+    transform: translateX(200%) rotate(-90deg);
+    transform-origin: bottom right;
+} */

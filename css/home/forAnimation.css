@@ -1,0 +1,169 @@
+.animation-divs {
+    position: absolute;
+    z-index: 100000000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    object-fit: contain;
+    width: 29vw;
+    height: 60vh;
+    transition: transform 1.4s;
+    transform-origin: bottom;
+}
+
+.animation-div11 {
+
+    bottom: 0;
+    background-image: url('../../img/animationStart/pngwing.com\ \(2\).png');
+}
+
+.animation-div12 {
+
+    bottom: 0;
+    right: 0;
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div22 {
+    bottom: 0;
+    right: 200px;
+    transform: rotate(15deg);
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div21 {
+
+    bottom: 0;
+    right: 500px;
+
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div31 {
+
+    bottom: 0;
+    right: 600px;
+
+    background-image: url('../../img/animationStart/pngegg\ \(1\).png');
+}
+
+.animation-div32 {
+
+    bottom: 0;
+    left: 500px;
+
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div41 {
+
+    top: 0;
+    left: 0;
+
+    background-image: url('../../img/animationStart/pngegg\ \(4\).png');
+}
+
+.animation-div42 {
+
+    bottom: 0;
+    left: 200px;
+
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div51 {
+
+    bottom: 0;
+    left: 500px;
+    z-index: 2000;
+    background-image: url('../../img/animationStart/pngegg\ \(1\).png');
+}
+
+.animation-div52 {
+    z-index: 2000;
+    bottom: 0;
+    right: 300px;
+    background-image: url('../../img/animationStart/pngegg\ \(1\).png');
+}
+
+.animation-div61 {
+
+    bottom: 0;
+    left: 0;
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+.animation-div62 {
+    z-index: 20000;
+    bottom: 250px;
+    left: 560px;
+    background-image: url('../../img/animationStart/pngegg\ \(5\).png');
+}
+
+
+.animation-div12.wind1,
+.animation-div21.wind1,
+.animation-div22.wind1,
+.animation-div31.wind1,
+.animation-div32.wind1,
+.animation-div41.wind1,
+.animation-div42.wind1,
+.animation-div61.wind1,
+.animation-div62.wind1 {
+    transform: rotate(20deg);
+}
+
+.animation-div11.wind1,
+.animation-div51.wind1,
+.animation-div52.wind1 {
+    transform: translateX(-200px) rotate(26deg);
+}
+
+
+.animation-div12.overblow,
+.animation-div21.overblow,
+.animation-div22.overblow,
+.animation-div32.overblow,
+.animation-div41.overblow,
+.animation-div42.overblow,
+.animation-div51.overblow,
+.animation-div52.overblow,
+.animation-div61.overblow,
+.animation-div62.overblow {
+    transform: translate(1100px, 400px) rotate(90deg);
+    transition: transform 1.8s;
+}
+
+.animation-div11.overblow {
+    transform: translate(600px, 700px) rotate(90deg);
+    transition: transform 1.8s;
+}
+
+.animation-div31.overblow {
+    transform: translate(500px, -970px) rotate(360deg);
+    transition: transform 1.8s;
+}
+
+body {
+    overflow: hidden;
+}
+
+.animationMush {
+    position: absolute;
+    width: 14vh;
+    height: 14vh;
+    background-image: url('../../img/animationStart/mus3.png');
+    z-index: 100000000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    object-fit: contain;
+    bottom: 0;
+    left: 50vw;
+    transition: transform 2.4s linear;
+
+}
+
+.animationMush.left {
+    transform: translateX(-2000px);
+}

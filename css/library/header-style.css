@@ -1,0 +1,234 @@
+.header-st {
+    height: 70px;
+    padding: 0px;
+    margin: 0;
+    border: none;
+    background-color: #7f7474;
+}
+
+.logo-st {
+    height: 68px;
+}
+
+.h1-st {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Gadugi;
+    opacity: 85%;
+    overflow: hidden;
+    text-shadow: -3px 1px #4d4d4d;
+}
+
+.h1S-st {
+    font-size: 30px;
+    color: #000000;
+}
+
+.nav-st {
+    color: white;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(#333232, #5e5e5e);
+    border-bottom: 1.6px solid #a9a9a9;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+    z-index: 10000;
+}
+
+.nav-st div {
+    height: 100%;
+}
+
+/* Left Section */
+.left-nav-st {
+    width: max-content;
+    display: flex;
+}
+
+.left-nav-st>a,
+.dropdownCon>a {
+    color: rgb(223, 223, 217);
+    height: 100%;
+    padding: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    background: linear-gradient(#2d2d2d, #5e5e5e);
+}
+
+.btn-library-st {
+    width: 200px;
+    padding-left: 25px !important;
+}
+
+.left-nav-st a:hover,
+.left-nav-st button:hover {
+    background: linear-gradient(#202020, #494949);
+}
+
+
+.dropdown {
+    overflow: hidden;
+    z-index: 10200202;
+}
+
+.dropdown:hover .dropdownCon {
+    display: block;
+}
+
+.dropdownCon>a {
+    display: block;
+    background-color: #595959;
+    width: 158.02px;
+}
+
+.dropBtn {
+    border: none;
+    height: 100%;
+    background: none;
+    color: rgb(223, 223, 217);
+    font-size: 20px;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+}
+
+.dropBtn:hover {
+    background-color: #676060;
+}
+
+.dropdownCon {
+    display: none;
+    position: absolute;
+    font-family: inherit;
+    height: max-content;
+}
+
+
+/* Middle Section */
+.middle-nav-st {
+    width: 30%;
+    position: relative;
+    left: 12%;
+    display: flex;
+    padding-left: 5%;
+}
+
+.search-bar {
+    height: 100%;
+    width: 70%;
+    background-color: #dadada;
+    font-size: larger;
+    padding-left: 4px;
+    font-weight: 700;
+    color: #373737;
+}
+
+.mid-src-btn {
+    height: 100%;
+    width: 40px;
+    background-color: #dadada;
+    color: #393939;
+}
+
+.mid-src-btn:hover {
+    background-color: #b6b6b6;
+    transition: background-color 0.4s;
+}
+
+/* Right Section */
+.right-nav-st {
+    padding-top: 4px;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+
+}
+
+.right-nav-st div {
+    position: relative;
+    width: 44px;
+}
+
+.icons-nav {
+    color: rgb(223, 223, 217);
+    margin-right: 4px;
+    margin-left: 9px;
+}
+
+.icons-nav:hover {
+    color: #676060;
+}
+
+.user-drop-down {
+    position: absolute !important;
+    width: 150px !important;
+    height: max-content !important;
+    background-color: #3d3d3d;
+    z-index: 200;
+    top: 36px !important;
+    right: -4px !important;
+    border-bottom-left-radius: 20px;
+    display: none;
+    flex-direction: column;
+    color: rgb(223, 223, 217);
+    font-size: 20px;
+    align-items: center;
+}
+
+.user-drop-down a {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding-bottom: 2px;
+    height: 100% !important;
+    border-radius: 20px;
+    color: rgb(223, 223, 217) !important;
+    text-decoration: none;
+    background: none;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.user-drop-down-btnLogIn:visited {
+    color: rgb(223, 223, 217) !important;
+    text-decoration: none !important;
+}
+
+.user-drop-down a:hover {
+    background-color: #606060;
+}
+
+.tooltip {
+    opacity: 0;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -7px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+    white-space: nowrap;
+    color: #1f1f1f;
+    font-weight: 800;
+}
+
+.spec-st1 {
+    left: -30px;
+}
+
+.spec-st2 {
+    left: -8px;
+}
+
+.map-location-st:hover .tooltip,
+.basket-shopping-st:hover .tooltip,
+.user-st:hover .tooltip {
+    opacity: 1;
+}
